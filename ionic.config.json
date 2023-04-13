@@ -1,0 +1,7 @@
+{
+  "name": "prep-apr-23",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
