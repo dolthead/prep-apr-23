@@ -1,6 +1,7 @@
 import { Component, EnvironmentInjector, inject } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
+import modeService from './services/dark-mode-service';
 
 @Component({
   selector: 'app-root',
@@ -12,5 +13,7 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   public environmentInjector = inject(EnvironmentInjector);
 
-  constructor() {}
+  constructor() {
+    modeService.getMode();
+  }
 }

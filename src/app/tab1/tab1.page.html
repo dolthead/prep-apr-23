@@ -18,16 +18,15 @@
   <ion-button expand="block" [routerLink]="['/tabs/tab2']">Go to tab 2</ion-button>
   <ion-button expand="block" size="large" [routerLink]="['/tabs/tab2']">Go to tab 2</ion-button>
   <ion-button expand="block" size="small" [routerLink]="['/tabs/tab3']">Go to tab 3</ion-button>
+  <br>
 
-  <ion-list>
-    <ion-item>
-      <ion-select value="auto" interface="popover" [(ngModel)]="mode" #modeSelect
-          (ionChange)="updateMode($event)" label="Dark mode">
-        <ion-select-option value="auto">Auto</ion-select-option>
-        <ion-select-option value="light">Light</ion-select-option>
-        <ion-select-option value="dark">Dark</ion-select-option>
-      </ion-select>
-    </ion-item>
-  </ion-list>
+  <ion-item>
+    <ion-select value="auto" interface="popover" [(ngModel)]="mode" #modeSelect
+        (ionChange)="updateMode()" label="Dark mode">
+      <ion-select-option value="auto">System</ion-select-option>
+      <ion-select-option value="light">Light</ion-select-option>
+      <ion-select-option value="dark">Dark</ion-select-option>
+    </ion-select>
+  </ion-item>
 
 </ion-content>
